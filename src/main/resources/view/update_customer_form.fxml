@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="486.0" prefWidth="670.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="106.0" stroke="BLACK" strokeType="INSIDE" width="670.0" />
+      <Label layoutX="230.0" layoutY="43.0" text="Update Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" prefHeight="46.0" prefWidth="97.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="301.0" fitWidth="338.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/undraw_Update_re_swkp.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchId" layoutX="394.0" layoutY="121.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter ID Number" />
+      <JFXButton layoutX="568.0" layoutY="121.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #2ffa40;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="344.0" layoutY="165.0" prefHeight="22.0" prefWidth="118.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateName" layoutX="372.0" layoutY="191.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="344.0" layoutY="229.0" prefHeight="22.0" prefWidth="136.0" text="Customer Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateAddress" layoutX="372.0" layoutY="255.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="344.0" layoutY="291.0" prefHeight="22.0" prefWidth="136.0" text="Customer Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateNumber" layoutX="372.0" layoutY="317.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="344.0" layoutY="350.0" prefHeight="22.0" prefWidth="109.0" text="Customer DOB">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUpdateDob" layoutX="372.0" layoutY="376.0" prefHeight="26.0" prefWidth="271.0" />
+      <JFXButton layoutX="439.0" layoutY="426.0" onAction="#btnUpdateOnAction" style="-fx-background-color: #2ffa40;" text="Update">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="514.0" layoutY="426.0" onAction="#btnClearOnAction" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: #ff4133;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

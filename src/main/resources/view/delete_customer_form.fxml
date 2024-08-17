@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="478.0" prefWidth="670.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DeleteFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="106.0" stroke="BLACK" strokeType="INSIDE" width="670.0" />
+      <Label layoutX="217.0" layoutY="53.0" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="7.0" prefHeight="46.0" prefWidth="97.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="311.0" fitWidth="361.0" layoutX="-1.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/undraw_Throw_away_re_x60k2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtSearchId" layoutX="404.0" layoutY="131.0" prefHeight="26.0" prefWidth="158.0" promptText="Enter ID Number" />
+      <JFXButton layoutX="578.0" layoutY="131.0" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #ff4133;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="354.0" layoutY="175.0" prefHeight="22.0" prefWidth="118.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDeleteName" layoutX="382.0" layoutY="201.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="354.0" layoutY="239.0" prefHeight="22.0" prefWidth="136.0" text="Customer Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDeleteAddress" layoutX="382.0" layoutY="265.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="354.0" layoutY="301.0" prefHeight="22.0" prefWidth="136.0" text="Customer Number">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDeleteNumber" layoutX="382.0" layoutY="327.0" prefHeight="26.0" prefWidth="271.0" />
+      <Label layoutX="354.0" layoutY="360.0" prefHeight="22.0" prefWidth="109.0" text="Customer DOB">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDeleteDob" layoutX="382.0" layoutY="386.0" prefHeight="26.0" prefWidth="271.0" />
+      <JFXButton layoutX="472.0" layoutY="436.0" onAction="#btnDeleteOnAction" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #ff4133;" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
